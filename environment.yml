@@ -1,0 +1,32 @@
+cat > environment.yml <<'YAML'
+name: v1v4sd
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - scikit-learn
+  - pandas
+  - pillow
+  - h5py
+  - pytables
+  - pyyaml
+  - tqdm
+  - matplotlib
+  - pytorch>=2.2
+  - torchvision
+  - pip
+  - pip:
+      - einops
+      - transformers>=4.42
+      - diffusers>=0.29
+      - accelerate
+      - safetensors
+      - sentencepiece
+      - opencv-python
+      - kornia
+      - joblib
+      - huggingface_hub
+      - streamlit>=1.28
+YAML
