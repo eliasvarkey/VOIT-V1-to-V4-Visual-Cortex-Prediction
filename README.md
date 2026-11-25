@@ -1,4 +1,17 @@
 # VOIT-V1-to-V4-Visual-Cortex-Prediction
+
+<!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
+
+> **Research code that reconstructs viewed images from V1 fMRI responses (Vim-1 dataset) by predicting V4 activity with neural networks and decoding it through Stable Diffusion latents; not runnable as a brainlife App.**
+
+The repository trains an MLP that maps V1 voxel responses to V4 responses, a second model that maps V4 to a PCA-compressed Stable Diffusion latent, and decodes the latent with the Stable Diffusion VAE (optionally refined with img2img); a Streamlit UI (app.py) runs inference. It has no brainlife main script and no registered inputs, outputs or parameters, so it cannot be executed on brainlife.io as registered.
+
+| | |
+|---|---|
+| 🔗 **Run it** | [doi.org/10.25663/brainlife.app.938](https://doi.org/10.25663/brainlife.app.938) |
+
+<!-- brainlife-app:end -->
+
 ## Part 1: The Big Picture (No Code Yet)
 
 ### What problem does this solve?
